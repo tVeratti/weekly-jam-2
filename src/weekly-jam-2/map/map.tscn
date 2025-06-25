@@ -1,47 +1,167 @@
 [gd_scene load_steps=7 format=3 uid="uid://qcgnigajolx8"]
 
 [ext_resource type="Script" uid="uid://ch7uktkwdk2gl" path="res://map/map.gd" id="1_a0dt8"]
-[ext_resource type="Texture2D" uid="uid://darwerhk4toms" path="res://map/assets/texture_08.png" id="1_hgrid"]
+[ext_resource type="Script" uid="uid://dr5dham70aswv" path="res://map/line_segment.gd" id="2_a0dt8"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a0dt8"]
-albedo_texture = ExtResource("1_hgrid")
-uv1_scale = Vector3(100, 100, 100)
-
-[sub_resource type="BoxMesh" id="BoxMesh_4hjbm"]
-size = Vector3(100, 0.1, 100)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_lgq1i"]
-size = Vector3(100, 0.1, 100)
-
-[sub_resource type="Curve3D" id="Curve3D_hgrid"]
-closed = true
+[sub_resource type="Curve2D" id="Curve2D_4hjbm"]
 bake_interval = 10.0
 _data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 2, 1, 1, 0, 0, 0, 0, 0, 0, 3, 1, 1, 0, 0, 0, 0, 0, 0, 4, 1, 1),
-"tilts": PackedFloat32Array(0, 0, 0, 0)
+"points": PackedVector2Array(0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 100, 0, 0, 0, 0, 0, 500, 0, 0, 0, 0, 0, 600, 0, 0, 0, 0, 0, 700, 0, 0, 0, 0, 0, 919, -2)
 }
-point_count = 4
+point_count = 6
 
-[node name="Map" type="Node3D"]
+[sub_resource type="Animation" id="Animation_a0dt8"]
+resource_name = "curve"
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LineSegment:curve:point_1/position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(100, 0), Vector2(100, 100)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LineSegment:curve:point_2/position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(500, 0), Vector2(500, -100)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("LineSegment:curve:point_3/position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(600, 0), Vector2(600, 100)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("LineSegment:curve:point_4/position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(700, 0), Vector2(700, -100)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("LineSegment:curve:point_5/position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(919, -2), Vector2(919, 100)]
+}
+
+[sub_resource type="Animation" id="Animation_4hjbm"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LineSegment:curve:point_1/position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(100, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LineSegment:curve:point_2/position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(500, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("LineSegment:curve:point_3/position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(600, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("LineSegment:curve:point_4/position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(700, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("LineSegment:curve:point_5/position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(919, -2)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lgq1i"]
+_data = {
+&"RESET": SubResource("Animation_4hjbm"),
+&"curve": SubResource("Animation_a0dt8")
+}
+
+[node name="Map" type="Node2D"]
 script = ExtResource("1_a0dt8")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="."]
+[node name="StaticBody3D" type="StaticBody2D" parent="."]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
-material_override = SubResource("StandardMaterial3D_a0dt8")
-mesh = SubResource("BoxMesh_4hjbm")
-skeleton = NodePath("../..")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody3D"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
-shape = SubResource("BoxShape3D_lgq1i")
+[node name="Line2D" type="Line2D" parent="StaticBody3D"]
+visible = false
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -0.702215, 0.711965, 0, -0.711965, -0.702215, 0, 4.56112, -10.8554)
+[node name="LineSegment" type="Path2D" parent="."]
+unique_name_in_owner = true
+curve = SubResource("Curve2D_4hjbm")
+script = ExtResource("2_a0dt8")
+metadata/_custom_type_script = "uid://dr5dham70aswv"
 
-[node name="Path3D" type="Path3D" parent="."]
-transform = Transform3D(0.999961, -0.00803554, 0.00352255, 0.00803656, 0.999968, -0.000287253, -0.00352014, 0.000315535, 0.999994, -1.17836, 0.77092, 0.367542)
-curve = SubResource("Curve3D_hgrid")
-
-[node name="StaticBody3D2" type="StaticBody3D" parent="."]
-
-[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="StaticBody3D2"]
+[node name="CurveAnimation" type="AnimationPlayer" parent="."]
+unique_name_in_owner = true
+libraries = {
+&"": SubResource("AnimationLibrary_lgq1i")
+}
+autoplay = "curve"

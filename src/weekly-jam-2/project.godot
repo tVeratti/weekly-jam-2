@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="weekly-jam-2"
+config/name="Straight Forward"
 run/main_scene="uid://dhvlg7ath6cva"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"

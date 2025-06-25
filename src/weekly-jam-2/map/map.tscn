@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3 uid="uid://qcgnigajolx8"]
+
+[ext_resource type="Script" uid="uid://ch7uktkwdk2gl" path="res://map/map.gd" id="1_a0dt8"]
+[ext_resource type="Texture2D" uid="uid://darwerhk4toms" path="res://map/assets/texture_08.png" id="1_hgrid"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a0dt8"]
+albedo_texture = ExtResource("1_hgrid")
+uv1_scale = Vector3(100, 100, 100)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4hjbm"]
+size = Vector3(100, 0.1, 100)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lgq1i"]
+size = Vector3(100, 0.1, 100)
+
+[sub_resource type="Curve3D" id="Curve3D_hgrid"]
+closed = true
+bake_interval = 10.0
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 2, 1, 1, 0, 0, 0, 0, 0, 0, 3, 1, 1, 0, 0, 0, 0, 0, 0, 4, 1, 1),
+"tilts": PackedFloat32Array(0, 0, 0, 0)
+}
+point_count = 4
+
+[node name="Map" type="Node3D"]
+script = ExtResource("1_a0dt8")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+material_override = SubResource("StandardMaterial3D_a0dt8")
+mesh = SubResource("BoxMesh_4hjbm")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_lgq1i")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.702215, 0.711965, 0, -0.711965, -0.702215, 0, 4.56112, -10.8554)
+
+[node name="Path3D" type="Path3D" parent="."]
+transform = Transform3D(0.999961, -0.00803554, 0.00352255, 0.00803656, 0.999968, -0.000287253, -0.00352014, 0.000315535, 0.999994, -1.17836, 0.77092, 0.367542)
+curve = SubResource("Curve3D_hgrid")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="."]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="StaticBody3D2"]

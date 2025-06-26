@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dr5dham70aswv" path="res://map/line_segment.gd" id="1_0oobi"]
 
 [sub_resource type="Curve2D" id="Curve2D_hgrid"]
-bake_interval = 25.0
+bake_interval = 50.0
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 100, 63.3958, 0, 0, 0, 0, 500, -63.3958, 0, 0, 0, 0, 600, 63.3958, 0, 0, 0, 0, 700, -63.3958, 0, 0, 0, 0, 919, 62.6637, 0, 0, 0, 0, 1037, -3)
 }

@@ -3,7 +3,7 @@ extends Path2D
 
 
 const MAX_HANDLE_X:float = 50.0
-const BAKED_POLYGON_MARGIN:float = 50.0
+const BAKED_POLYGON_MARGIN:float = 1000.0
 
 
 func _ready():

@@ -9,8 +9,8 @@ const CURVE_ANIMATION_GROUP:String = "curve_animations"
 const POINT_DISTANCE_X_MIN:float = 200.0
 const POINT_DISTANCE_X_MAX:float = 400.0
 
-const POINT_DISTANCE_Y_MIN:float = -100.0
-const POINT_DISTANCE_Y_MAX:float = 100.0
+const POINT_DISTANCE_Y_MIN:float = -120.0
+const POINT_DISTANCE_Y_MAX:float = 120.0
 
 
 func generate_container() -> Node2D:
@@ -19,13 +19,13 @@ func generate_container() -> Node2D:
 	return container
 
 
-func generate_points(container, procedural_seed:int = 0) -> void:
+func generate_points(container:Node2D, num_points:int, procedural_seed:int = 0) -> void:
 	container.add_to_group(POINT_CONTAINER_GROUP, true)
 	
 	if procedural_seed:
 		seed(procedural_seed)
 	
-	generate_point_nodes(20, container)
+	generate_point_nodes(num_points, container)
 
 
 func generate_point_nodes(num_points:int, container:Node2D) -> void:

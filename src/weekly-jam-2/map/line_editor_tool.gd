@@ -6,6 +6,7 @@ extends Node2D
 @export var line_2d:Line2D
 
 @export var line_seed:int = 1
+@export var line_length:int = 100
 
 @export_tool_button("Generate Line")
 var button:Callable = generate_line
@@ -32,7 +33,7 @@ func generate_line() -> void:
 	map.add_child(container)
 	container.owner = map
 	
-	line_generator.generate_points(container, line_seed)
+	line_generator.generate_points(container, line_length, line_seed)
 	line_generator.generate_animations(container)
 
 

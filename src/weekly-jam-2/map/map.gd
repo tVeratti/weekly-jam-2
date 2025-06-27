@@ -55,8 +55,7 @@ func _process(_delta):
 	if not thread.is_alive():
 		thread.start(_calculate_localized_points_async.bind(
 			ball.global_position,
-			_get_line_positions()
-		))
+			_get_line_positions()))
 
 
 func _physics_process(delta):

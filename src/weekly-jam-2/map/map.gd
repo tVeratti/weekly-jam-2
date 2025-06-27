@@ -2,20 +2,26 @@ extends Node2D
 
 
 const MAX_HANDLE_X:float = 50.0
-const LOCAL_POINT_DISTANCE:float = 960.0
+const LOCAL_POINT_DISTANCE:float = 2000.0
 const CURVE_ANIMATION_SPEED:float = 4.0
+
+const DIRECTION_TEXTURE:Texture = preload("uid://cljp2t7r1q18x")
 
 
 @onready var input_component:InputComponent = %InputComponent
 
 # Floor / Line Body
-@onready var static_body_2d = $StaticBody2D
+@onready var line_body:StaticBody2D = %LineBody
 @onready var collision_polygon:CollisionPolygon2D = %CollisionPolygon2D
 @onready var line_2d:Line2D = %Line2D
 
 # Animated Line Points
 @onready var curve_animation:AnimationPlayer = %CurveAnimation
 @onready var line_points: = get_tree().get_nodes_in_group("line_point")
+
+@onready var ghost_dots_0 = %GhostDots0
+@onready var ghost_dots_1 = %GhostDots1
+@onready var spawn:Node2D = $Spawn
 
 
 var curve_speed:float = CURVE_ANIMATION_SPEED
@@ -33,10 +39,20 @@ func _ready() -> void:
 	
 	curve_animation.current_animation = "curve"
 	curve_animation.pause()
+	
+	# Create ghost lines
+	_draw_stars(0, ghost_dots_0)
+	_draw_stars(1, ghost_dots_1)
+	
+	input_component.reset.connect(_on_reset)
 
 
 func _process(delta):
 	line_positions = _get_line_positions()
+	
+	ghost_dots_0.modulate.a = curve_animation.current_animation_position
+	ghost_dots_1.modulate.a = 1.0 - curve_animation.current_animation_position
+	#line_2d.modulate = lerp(Colors.YELLOW, Colors.PINK, curve_animation.current_animation_position)
 	
 	if not thread.is_alive():
 		thread.start(_calculate_localized_points_async)
@@ -83,5 +99,30 @@ func _localized_points_ready() -> void:
 	thread.wait_to_finish()
 
 
+func _draw_stars(index:int, parent_node:Node) -> void:
+	curve_animation.seek(index, true)
+	
+	var points = _get_line_positions()
+	for point in points:
+		var sprite: = Sprite2D.new()
+		sprite.texture = DIRECTION_TEXTURE
+		sprite.global_position = point
+		sprite.flip_v = index == 0
+		sprite.scale = Vector2(0.5, 0.5)
+		parent_node.add_child(sprite)
+
+
 func _get_line_positions() -> Array:
 	return line_points.map(func(node): return node.global_position)
+
+
+func _on_reset() -> void:
+	PhysicsServer2D.body_set_state(
+		ball.get_rid(),
+		PhysicsServer2D.BODY_STATE_LINEAR_VELOCITY,
+		Vector2.ZERO)
+	
+	PhysicsServer2D.body_set_state(
+		ball.get_rid(),
+		PhysicsServer2D.BODY_STATE_TRANSFORM,
+		Transform2D.IDENTITY.translated(spawn.global_position))

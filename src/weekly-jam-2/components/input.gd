@@ -6,6 +6,10 @@ const LEFT:String = "left"
 const RIGHT:String = "right"
 const UP:String = "up"
 const DOWN:String = "down"
+const RESET:String = "reset"
+
+
+signal reset
 
 
 var direction:Vector2 = Vector2.ZERO
@@ -24,4 +28,5 @@ func _process(delta):
 	elif Input.is_action_pressed(DOWN):
 		direction.y = 1
 	
-	#direction = direction.normalized()
+	if Input.is_action_just_released(RESET):
+		reset.emit()

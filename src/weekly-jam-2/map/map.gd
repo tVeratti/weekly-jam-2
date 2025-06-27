@@ -18,7 +18,6 @@ const DIRECTION_TEXTURE:Texture = preload("uid://cljp2t7r1q18x")
 
 # Animated Line Points
 @onready var curve_animation:AnimationPlayer = %CurveAnimation
-@onready var line_points: = get_tree().get_nodes_in_group("line_point")
 
 @onready var ghost_dots_0 = %GhostDots0
 @onready var ghost_dots_1 = %GhostDots1
@@ -44,7 +43,7 @@ func _ready() -> void:
 	input_component.reset.connect(_on_reset)
 
 
-func _process(delta):
+func _process(_delta):
 	ball = get_tree().get_first_node_in_group("ball")
 	if not is_instance_valid(ball):
 		return

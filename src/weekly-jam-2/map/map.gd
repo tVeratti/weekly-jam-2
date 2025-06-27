@@ -29,14 +29,11 @@ var curve_speed:float = CURVE_ANIMATION_SPEED
 var baked_points:PackedVector2Array = []
 
 var ball:RigidBody2D
-var line_positions:Array = []
 
 var thread: = Thread.new()
 
 
 func _ready() -> void:
-	ball = get_tree().get_first_node_in_group("ball")
-	
 	curve_animation.current_animation = "curve"
 	curve_animation.pause()
 	
@@ -48,10 +45,9 @@ func _ready() -> void:
 
 
 func _process(delta):
+	ball = get_tree().get_first_node_in_group("ball")
 	if not is_instance_valid(ball):
 		return
-	
-	line_positions = _get_line_positions()
 	
 	ghost_dots_0.modulate.a = curve_animation.current_animation_position
 	ghost_dots_1.modulate.a = 1.0 - curve_animation.current_animation_position
@@ -123,6 +119,7 @@ func _draw_stars(index:int, parent_node:Node) -> void:
 
 
 func _get_line_positions() -> Array:
+	var line_points: = get_tree().get_nodes_in_group(ProceduralPoints.POINT_GROUP)
 	return line_points.map(func(node): return node.global_position)
 
 

@@ -5,7 +5,7 @@
 
 [node name="Main" type="Node2D"]
 
-[node name="Map" parent="." instance=ExtResource("2_h2yge")]
-
 [node name="Ball" parent="." instance=ExtResource("2_0xm2m")]
-position = Vector2(-1825, -495)
+position = Vector2(506, -732)
+
+[node name="Map" parent="." instance=ExtResource("2_h2yge")]

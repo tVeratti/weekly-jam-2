@@ -15,7 +15,7 @@ signal reset
 var direction:Vector2 = Vector2.ZERO
 
 
-func _process(delta):
+func _process(_delta):
 	direction = Vector2.ZERO
 	
 	if Input.is_action_pressed(LEFT):

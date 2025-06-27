@@ -13,7 +13,7 @@ var contact_point_previous:Vector2 = Vector2.ZERO
 @onready var speed_trail = %SpeedTrail
 
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	var speed_length: = linear_velocity.length()
 	
 	speed_trail.emitting = speed_length > HIGH_SPEED_VELOCITY
@@ -26,7 +26,7 @@ func _physics_process(delta):
 	#print(linear_velocity)
 
 
-func _on_area_2d_body_entered(body):
+func _on_area_2d_body_entered(_body):
 	# If the body is overlapping with the floor, that means its shape has
 	# change in such a way that it should apply a strong force in that direction.
 	is_colliding = true
@@ -62,12 +62,12 @@ func _integrate_forces(state):
 		
 		state.apply_central_impulse(clamped_velocity)
 		
-		var collider:Node2D = state.get_contact_collider_object(0)
+		#var collider:Node2D = state.get_contact_collider_object(0)
 			#var normal:Vector2 = state.get_contact_local_normal(i)
 			#var clamped_velocity = clamp(normal * COLLISION_FORCE, Vector2(-COLLISION_FORCE, -COLLISION_FORCE), Vector2(COLLISION_FORCE, COLLISION_FORCE))
 			#apply_central_impulse(clamped_velocity)
 			#print(collider)
 
 
-func _on_area_2d_body_exited(body):
+func _on_area_2d_body_exited(_body):
 	is_colliding = false

@@ -1,6 +1,7 @@
 extends RigidBody2D
 
 const COLLISION_FORCE:float = 200.0
+const HIGH_SPEED_VELOCITY:float = 300.0
 
 var is_colliding:bool = false
 
@@ -9,8 +10,18 @@ var contact_velocity:Vector2 = Vector2.ZERO
 var contact_point_previous:Vector2 = Vector2.ZERO
 
 
+@onready var speed_trail = %SpeedTrail
+
+
 func _physics_process(delta):
-	pass
+	var speed_length: = linear_velocity.length()
+	
+	speed_trail.emitting = speed_length > HIGH_SPEED_VELOCITY
+	var trail_material:ParticleProcessMaterial = speed_trail.process_material
+	trail_material.direction = Vector3(linear_velocity.x, linear_velocity.y, 0)
+	
+	var speed_percentage:float = max(0.01, speed_length / HIGH_SPEED_VELOCITY)
+	modulate = Color.WHITE * lerp(1.0, 2.0, speed_percentage)
 	#apply_force(linear_velocity * 0.2)
 	#print(linear_velocity)
 

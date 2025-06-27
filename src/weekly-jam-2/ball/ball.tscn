@@ -1,9 +1,40 @@
-[gd_scene load_steps=5 format=3 uid="uid://dudsn3jlacbwv"]
+[gd_scene load_steps=10 format=3 uid="uid://dudsn3jlacbwv"]
 
 [ext_resource type="Script" uid="uid://bwfjqhwefbbei" path="res://ball/ball.gd" id="1_6plaf"]
 [ext_resource type="Texture2D" uid="uid://dhto6rg6hrglx" path="res://ball/assets/ball.png" id="2_pwunn"]
+[ext_resource type="Shader" uid="uid://bopklqvg1e5xt" path="res://ball/glow.gdshader" id="3_biv8x"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_6plaf"]
+
+[sub_resource type="Curve" id="Curve_biv8x"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.508816, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_6xd6y"]
+curve = SubResource("Curve_biv8x")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_6xd6y"]
+particle_flag_disable_z = true
+emission_shape_scale = Vector3(10, 10, 10)
+emission_shape = 1
+emission_sphere_radius = 1.0
+direction = Vector3(1, 1, 0)
+initial_velocity_max = 100.0
+gravity = Vector3(0, 0, 0)
+scale_min = 0.1
+scale_max = 0.5
+scale_curve = SubResource("CurveTexture_6xd6y")
+hue_variation_min = -0.7
+hue_variation_max = 0.42
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6xd6y"]
+shader = ExtResource("3_biv8x")
+shader_parameter/color1 = Color(0, 0, 0, 1)
+shader_parameter/color2 = Color(0, 0, 0, 1)
+shader_parameter/threshold = 0.0
+shader_parameter/intensity = 0.0
+shader_parameter/opacity = 0.0
+shader_parameter/glow_color = Color(0, 0, 0, 1)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_pwunn"]
 radius = 8.0
@@ -18,16 +49,25 @@ angular_damp = 0.01
 script = ExtResource("1_6plaf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 shape = SubResource("CircleShape2D_6plaf")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(0.8, 0.8)
 
+[node name="SpeedTrail" type="GPUParticles2D" parent="."]
+unique_name_in_owner = true
+amount = 20
+texture = ExtResource("2_pwunn")
+process_material = SubResource("ParticleProcessMaterial_6xd6y")
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 2
+material = SubResource("ShaderMaterial_6xd6y")
 texture = ExtResource("2_pwunn")
 
 [node name="Area2D" type="Area2D" parent="."]
+visible = false
 collision_layer = 0
 collision_mask = 2
 

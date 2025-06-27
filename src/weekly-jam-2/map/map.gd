@@ -1,3 +1,4 @@
+class_name Map
 extends Node2D
 
 
@@ -28,7 +29,6 @@ var curve_speed:float = CURVE_ANIMATION_SPEED
 var baked_points:PackedVector2Array = []
 
 var ball:RigidBody2D
-var ball_position:Vector2
 var line_positions:Array = []
 
 var thread: = Thread.new()
@@ -48,6 +48,9 @@ func _ready() -> void:
 
 
 func _process(delta):
+	if not is_instance_valid(ball):
+		return
+	
 	line_positions = _get_line_positions()
 	
 	ghost_dots_0.modulate.a = curve_animation.current_animation_position
@@ -55,11 +58,15 @@ func _process(delta):
 	#line_2d.modulate = lerp(Colors.YELLOW, Colors.PINK, curve_animation.current_animation_position)
 	
 	if not thread.is_alive():
-		thread.start(_calculate_localized_points_async)
+		thread.start(_calculate_localized_points_async.bind(
+			ball.global_position,
+			_get_line_positions()
+		))
 
 
 func _physics_process(delta):
-	ball_position = ball.global_position
+	if not is_instance_valid(ball):
+		return
 	
 	var input_direction:Vector2 = input_component.direction
 	_seek_animation(curve_animation, -input_direction.y, delta)
@@ -80,7 +87,7 @@ func _seek_animation(player:AnimationPlayer, input_amount:float, delta:float) ->
 
 
 ## Create a curve using `line_positions`, set `baked_points` to be used in `_physics_process`
-func _calculate_localized_points_async() -> void:
+static func calculate_localized_points(ball_position:Vector2, line_positions:Array) -> PackedVector2Array:
 	var localized_curve: = Curve2D.new()
 	localized_curve.bake_interval = 50.0
 	
@@ -90,8 +97,11 @@ func _calculate_localized_points_async() -> void:
 			var point_out: = Vector2(MAX_HANDLE_X, 0)
 			localized_curve.add_point(point, point_in, point_out)
 	
-	baked_points = localized_curve.get_baked_points()
-	
+	return localized_curve.get_baked_points()
+
+
+func _calculate_localized_points_async(ball_position:Vector2, line_positions:Array) -> void:
+	baked_points = calculate_localized_points(ball_position, line_positions)
 	call_deferred("_localized_points_ready")
 
 

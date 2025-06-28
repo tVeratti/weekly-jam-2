@@ -1,19 +1,9 @@
 class_name LineSegment
-extends Path2D
+extends Node
 
 
 const MAX_HANDLE_X:float = 50.0
 const BAKED_POLYGON_MARGIN:float = 1000.0
-
-
-func _ready():
-	_update_handles(1.0)
-
-
-func _update_handles(curve_amount:float) -> void:
-	for i in curve.point_count:
-		curve.set_point_in(i, Vector2(-MAX_HANDLE_X * curve_amount, 0))
-		curve.set_point_out(i, Vector2(MAX_HANDLE_X * curve_amount, 0))
 
 
 ## Given a baked set of points, close it with a large downward gap so that

@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dudsn3jlacbwv"]
+[gd_scene load_steps=13 format=3 uid="uid://dudsn3jlacbwv"]
 
 [ext_resource type="Script" uid="uid://bwfjqhwefbbei" path="res://ball/ball.gd" id="1_6plaf"]
 [ext_resource type="Texture2D" uid="uid://dhto6rg6hrglx" path="res://ball/assets/ball.png" id="2_pwunn"]
@@ -7,6 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://cdmt4rvd7pufl" path="res://ball/speed_label/speed_label.tscn" id="5_0p2w7"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_6plaf"]
+custom_solver_bias = 1.0
+radius = 20.0
 
 [sub_resource type="Curve" id="Curve_6xd6y"]
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
@@ -34,21 +36,25 @@ hue_variation_min = -1.0
 hue_variation_max = 1.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_pwunn"]
-radius = 8.0
+radius = 15.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0p2w7"]
+radius = 22.0
 
 [node name="Ball" type="RigidBody2D" groups=["ball"]]
 collision_mask = 3
 continuous_cd = 2
 contact_monitor = true
 max_contacts_reported = 2
+linear_damp_mode = 1
+linear_damp = 0.2
 script = ExtResource("1_6plaf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 shape = SubResource("CircleShape2D_6plaf")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(0.8, 0.8)
+zoom = Vector2(0.7, 0.7)
 
 [node name="TrailLine" type="Line2D" parent="." node_paths=PackedStringArray("target")]
 unique_name_in_owner = true
@@ -71,15 +77,23 @@ process_material = SubResource("ParticleProcessMaterial_6xd6y")
 texture_filter = 2
 texture = ExtResource("2_pwunn")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="EnterArea" type="Area2D" parent="."]
 visible = false
 collision_layer = 0
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnterArea"]
 shape = SubResource("CircleShape2D_pwunn")
+
+[node name="ExitArea" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitArea"]
+shape = SubResource("CircleShape2D_0p2w7")
 
 [node name="SpeedLabel" parent="." instance=ExtResource("5_0p2w7")]
 
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
-[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="EnterArea" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="EnterArea" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_exited" from="ExitArea" to="." method="_on_exit_area_body_exited"]

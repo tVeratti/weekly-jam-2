@@ -1,11 +1,35 @@
-[gd_scene load_steps=3 format=3 uid="uid://dhvlg7ath6cva"]
+[gd_scene load_steps=5 format=3 uid="uid://dhvlg7ath6cva"]
 
+[ext_resource type="Script" uid="uid://cgbplc3wcsv8l" path="res://main.gd" id="1_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://dudsn3jlacbwv" path="res://ball/ball.tscn" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://qcgnigajolx8" path="res://map/map.tscn" id="2_h2yge"]
+[ext_resource type="Script" uid="uid://d0wbndw15p5r5" path="res://level_buttons.gd" id="3_h2yge"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_1bvp3")
 
 [node name="Ball" parent="." instance=ExtResource("2_0xm2m")]
+unique_name_in_owner = true
 position = Vector2(506, -732)
 
 [node name="Map" parent="." instance=ExtResource("2_h2yge")]
+unique_name_in_owner = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+unique_name_in_owner = true
+process_mode = 2
+
+[node name="LevelButtons" type="MarginContainer" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_h2yge")
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/LevelButtons"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+columns = 4

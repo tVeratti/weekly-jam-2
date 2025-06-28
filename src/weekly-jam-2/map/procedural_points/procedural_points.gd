@@ -3,14 +3,15 @@ extends Node
 
 
 const POINT_GROUP:String = "line_point"
+const BOUNDARY_GROUP:String = "boundary"
 const POINT_CONTAINER_GROUP:String = "line_points_container"
 const CURVE_ANIMATION_GROUP:String = "curve_animations"
 
-const POINT_DISTANCE_X_MIN:float = 200.0
-const POINT_DISTANCE_X_MAX:float = 400.0
+const POINT_DISTANCE_X_MIN:float = 300.0
+const POINT_DISTANCE_X_MAX:float = 600.0
 
-const POINT_DISTANCE_Y_MIN:float = -120.0
-const POINT_DISTANCE_Y_MAX:float = 120.0
+const POINT_DISTANCE_Y_MIN:float = -200.0
+const POINT_DISTANCE_Y_MAX:float = 200.0
 
 
 func generate_container() -> Node2D:
@@ -43,27 +44,40 @@ func generate_point_nodes(num_points:int, container:Node2D) -> void:
 		previous_position = next_position
 		
 		_add_point(node, container)
+	
+	var end_boundary: = Boundary.new()
+	_add_boundary(end_boundary, container)
 
 
-func _get_next_y(estimated_velocity:float) -> float:
-	# Rules: estimated_velocity needs to stay above 0
-	if estimated_velocity > 0:
-		return randf_range(POINT_DISTANCE_Y_MIN, POINT_DISTANCE_Y_MAX)
+func _get_next_y(estimated_velocity:float, previous_y:float) -> float:
+	if previous_y > 0:
+		return randf_range(-POINT_DISTANCE_Y_MAX, -POINT_DISTANCE_Y_MAX / 2.0)
 	else:
 		# Don't go UP because velocity is already at 0
-		return randf_range(-estimated_velocity * 2.0, POINT_DISTANCE_Y_MAX)
+		return randf_range(POINT_DISTANCE_Y_MAX / 2.0, POINT_DISTANCE_Y_MAX * 2.0)
 
 
 func _add_point(node:Node2D, container:Node2D) -> void:
-	var scene_root: = get_tree().edited_scene_root
-	
 	container.add_child(node)
-	node.owner = scene_root
+	node.name = "LinePoint"
 	node.add_to_group(POINT_GROUP, true)
+	
+	if Engine.is_editor_hint():
+		var scene_root: = get_tree().edited_scene_root
+		node.owner = scene_root
 
 
-func generate_animations(container:Node2D) -> void:
-	var scene_root: = get_tree().edited_scene_root
+func _add_boundary(node:Node2D, container:Node2D) -> void:
+	container.add_child(node)
+	node.name = "Boundary"
+	node.add_to_group(BOUNDARY_GROUP, true)
+	
+	if Engine.is_editor_hint():
+		var scene_root: = get_tree().edited_scene_root
+		node.owner = scene_root
+
+
+func generate_animations(container:Node2D) -> AnimationPlayer:
 	var points: = container.get_children()
 	
 	var animation: = Animation.new()
@@ -76,7 +90,9 @@ func generate_animations(container:Node2D) -> void:
 	curve_animation_player.add_animation_library("", animation_library)
 	
 	container.add_child(curve_animation_player)
-	curve_animation_player.owner = scene_root
+	if Engine.is_editor_hint():
+		var scene_root: = get_tree().edited_scene_root
+		curve_animation_player.owner = scene_root
 	
 	var previous_position:Vector2 = Vector2.ZERO
 	var estimated_velocity:float = 0
@@ -88,7 +104,12 @@ func generate_animations(container:Node2D) -> void:
 		
 		var curve_position: = Vector2(
 			point.position.x,
-			point.position.y + _get_next_y(estimated_velocity))
+			point.position.y + _get_next_y(estimated_velocity, previous_position.y))
+		
+		#var label = Label.new()
+		#label.text = str(previous_position.y)
+		#point.add_child(label)
+		#label.owner = scene_root
 		
 		if point.position.x == 0:
 			# First point should always tilt away from 0
@@ -97,5 +118,7 @@ func generate_animations(container:Node2D) -> void:
 		animation.track_insert_key(track_index, 1.0, curve_position)
 		animation.length = 1.0
 		
-		estimated_velocity += curve_position.y - previous_position.y 
+		estimated_velocity += previous_position.y - curve_position.y
 		previous_position = curve_position
+	
+	return curve_animation_player

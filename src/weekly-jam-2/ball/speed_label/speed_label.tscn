@@ -5,8 +5,8 @@
 
 [sub_resource type="LabelSettings" id="LabelSettings_fetbi"]
 font = ExtResource("2_4037o")
-outline_size = 3
-outline_color = Color(0.203922, 0, 0.384314, 1)
+shadow_color = Color(0, 0.8, 0.733333, 1)
+shadow_offset = Vector2(2, 2)
 
 [node name="SpeedLabel" type="Node2D"]
 top_level = true

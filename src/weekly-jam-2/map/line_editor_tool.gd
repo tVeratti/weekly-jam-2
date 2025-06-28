@@ -13,11 +13,11 @@ var button:Callable = generate_line
 
 @export var auto_update:bool = false
 
-var line_generator: = ProceduralPoints.new()
+var line_generator:ProceduralPoints
 
 
 func _ready() -> void:
-	add_child(line_generator)
+	line_generator = map.line_generator
 	
 	if not Engine.is_editor_hint():
 		queue_free()

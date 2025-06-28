@@ -1,3 +1,4 @@
+class_name Ball
 extends RigidBody2D
 
 const COLLISION_FORCE:float = 200.0
@@ -22,8 +23,6 @@ func _physics_process(_delta):
 	if is_high_speed:
 		var trail_material:ParticleProcessMaterial = speed_trail.process_material
 		trail_material.direction = Vector3(linear_velocity.x, linear_velocity.y, 0)
-	
-	#var speed_percentage:float = max(0.01, speed_length / HIGH_SPEED_VELOCITY)
 	
 	trail_line.is_active = is_high_speed
 

@@ -51,7 +51,7 @@ func _get_next_y(estimated_velocity:float) -> float:
 		return randf_range(POINT_DISTANCE_Y_MIN, POINT_DISTANCE_Y_MAX)
 	else:
 		# Don't go UP because velocity is already at 0
-		return randf_range(POINT_DISTANCE_Y_MAX / 2.0, POINT_DISTANCE_Y_MAX)
+		return randf_range(-estimated_velocity * 2.0, POINT_DISTANCE_Y_MAX)
 
 
 func _add_point(node:Node2D, container:Node2D) -> void:
@@ -89,6 +89,11 @@ func generate_animations(container:Node2D) -> void:
 		var curve_position: = Vector2(
 			point.position.x,
 			point.position.y + _get_next_y(estimated_velocity))
+		
+		if point.position.x == 0:
+			# First point should always tilt away from 0
+			curve_position.y = -100
+		
 		animation.track_insert_key(track_index, 1.0, curve_position)
 		animation.length = 1.0
 		

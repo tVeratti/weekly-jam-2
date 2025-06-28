@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://cdmt4rvd7pufl"]
+
+[ext_resource type="Script" uid="uid://bqs3wkfk4o2na" path="res://ball/speed_label/speed_label.gd" id="1_fetbi"]
+[ext_resource type="FontFile" uid="uid://bagy20j3uygs7" path="res://assets/Coiny-Regular.ttf" id="2_4037o"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_fetbi"]
+font = ExtResource("2_4037o")
+outline_size = 3
+outline_color = Color(0.203922, 0, 0.384314, 1)
+
+[node name="SpeedLabel" type="Node2D"]
+top_level = true
+script = ExtResource("1_fetbi")
+
+[node name="Label" type="Label" parent="."]
+custom_minimum_size = Vector2(300, 0)
+offset_left = -145.0
+offset_right = 155.0
+offset_bottom = 23.0
+size_flags_horizontal = 4
+text = "200"
+label_settings = SubResource("LabelSettings_fetbi")
+horizontal_alignment = 1
+vertical_alignment = 1

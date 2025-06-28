@@ -48,1214 +48,614 @@ hue_variation_curve = SubResource("CurveTexture_kffv2")
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("@Node2D@23661:position")
+tracks/0/path = NodePath("@Node2D@59109:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(0, 0), Vector2(0, 62.6298)]
+"values": [Vector2(0, 0), Vector2(0, -100)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("@Node2D@23662:position")
+tracks/1/path = NodePath("@Node2D@59110:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(340.576, 0), Vector2(340.576, -24.456)]
+"values": [Vector2(340.576, 0), Vector2(340.576, 133.355)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("@Node2D@23663:position")
+tracks/2/path = NodePath("@Node2D@59111:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(544.993, 0), Vector2(544.993, 86.98)]
+"values": [Vector2(544.993, 0), Vector2(544.993, 49.3156)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("@Node2D@23664:position")
+tracks/3/path = NodePath("@Node2D@59112:position")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(936.691, 0), Vector2(936.691, -117.017)]
+"values": [Vector2(936.691, 0), Vector2(936.691, -87.946)]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("@Node2D@23665:position")
+tracks/4/path = NodePath("@Node2D@59113:position")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(1140.88, 0), Vector2(1140.88, 101.375)]
+"values": [Vector2(1140.88, 0), Vector2(1140.88, 160.787)]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("@Node2D@23666:position")
+tracks/5/path = NodePath("@Node2D@59114:position")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(1351.85, 0), Vector2(1351.85, -16.7508)]
+"values": [Vector2(1351.85, 0), Vector2(1351.85, -3.75401)]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("@Node2D@23667:position")
+tracks/6/path = NodePath("@Node2D@59115:position")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(1562.52, 0), Vector2(1562.52, 71.8544)]
+"values": [Vector2(1562.52, 0), Vector2(1562.52, 31.2494)]
 }
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("@Node2D@23668:position")
+tracks/7/path = NodePath("@Node2D@59116:position")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(1767.26, 0), Vector2(1767.26, 80.715)]
+"values": [Vector2(1767.26, 0), Vector2(1767.26, 87.049)]
 }
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("@Node2D@23669:position")
+tracks/8/path = NodePath("@Node2D@59117:position")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(2151.72, 0), Vector2(2151.72, -100.627)]
+"values": [Vector2(2151.72, 0), Vector2(2151.72, -91.6423)]
 }
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("@Node2D@23670:position")
+tracks/9/path = NodePath("@Node2D@59118:position")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(2476.34, 0), Vector2(2476.34, 67.3218)]
+"values": [Vector2(2476.34, 0), Vector2(2476.34, 154.076)]
 }
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("@Node2D@23671:position")
+tracks/10/path = NodePath("@Node2D@59119:position")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(2734.67, 0), Vector2(2734.67, -55.1243)]
+"values": [Vector2(2734.67, 0), Vector2(2734.67, -79.1732)]
 }
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("@Node2D@23672:position")
+tracks/11/path = NodePath("@Node2D@59120:position")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(3046.2, 0), Vector2(3046.2, 108.101)]
+"values": [Vector2(3046.2, 0), Vector2(3046.2, 123.239)]
 }
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("@Node2D@23673:position")
+tracks/12/path = NodePath("@Node2D@59121:position")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(3381.9, 0), Vector2(3381.9, 77.4105)]
+"values": [Vector2(3381.9, 0), Vector2(3381.9, -86.3009)]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("@Node2D@23674:position")
+tracks/13/path = NodePath("@Node2D@59122:position")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(3646.82, 0), Vector2(3646.82, -50.1603)]
+"values": [Vector2(3646.82, 0), Vector2(3646.82, 125.901)]
 }
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("@Node2D@23675:position")
+tracks/14/path = NodePath("@Node2D@59123:position")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(3879.07, 0), Vector2(3879.07, 85.2728)]
+"values": [Vector2(3879.07, 0), Vector2(3879.07, 42.0855)]
 }
 tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("@Node2D@23676:position")
+tracks/15/path = NodePath("@Node2D@59124:position")
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(4172.9, 0), Vector2(4172.9, -85.2851)]
+"values": [Vector2(4172.9, 0), Vector2(4172.9, -89.1167)]
 }
 tracks/16/type = "value"
 tracks/16/imported = false
 tracks/16/enabled = true
-tracks/16/path = NodePath("@Node2D@23677:position")
+tracks/16/path = NodePath("@Node2D@59125:position")
 tracks/16/interp = 1
 tracks/16/loop_wrap = true
 tracks/16/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(4507.3, 0), Vector2(4507.3, 111.849)]
+"values": [Vector2(4507.3, 0), Vector2(4507.3, 172.361)]
 }
 tracks/17/type = "value"
 tracks/17/imported = false
 tracks/17/enabled = true
-tracks/17/path = NodePath("@Node2D@23678:position")
+tracks/17/path = NodePath("@Node2D@59126:position")
 tracks/17/interp = 1
 tracks/17/loop_wrap = true
 tracks/17/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(4749.59, 0), Vector2(4749.59, 12.7467)]
+"values": [Vector2(4749.59, 0), Vector2(4749.59, 92.3935)]
 }
 tracks/18/type = "value"
 tracks/18/imported = false
 tracks/18/enabled = true
-tracks/18/path = NodePath("@Node2D@23679:position")
+tracks/18/path = NodePath("@Node2D@59127:position")
 tracks/18/interp = 1
 tracks/18/loop_wrap = true
 tracks/18/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(4986.12, 0), Vector2(4986.12, -97.9684)]
+"values": [Vector2(4986.12, 0), Vector2(4986.12, -115.53)]
 }
 tracks/19/type = "value"
 tracks/19/imported = false
 tracks/19/enabled = true
-tracks/19/path = NodePath("@Node2D@23680:position")
+tracks/19/path = NodePath("@Node2D@59128:position")
 tracks/19/interp = 1
 tracks/19/loop_wrap = true
 tracks/19/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(5359.22, 0), Vector2(5359.22, 91.5139)]
+"values": [Vector2(5359.22, 0), Vector2(5359.22, 133.167)]
 }
 tracks/20/type = "value"
 tracks/20/imported = false
 tracks/20/enabled = true
-tracks/20/path = NodePath("@Node2D@23681:position")
+tracks/20/path = NodePath("@Node2D@59129:position")
 tracks/20/interp = 1
 tracks/20/loop_wrap = true
 tracks/20/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(5631.48, 0), Vector2(5631.48, 78.3169)]
+"values": [Vector2(5631.48, 0), Vector2(5631.48, -18.0882)]
 }
 tracks/21/type = "value"
 tracks/21/imported = false
 tracks/21/enabled = true
-tracks/21/path = NodePath("@Node2D@23682:position")
+tracks/21/path = NodePath("@Node2D@59130:position")
 tracks/21/interp = 1
 tracks/21/loop_wrap = true
 tracks/21/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(5984.22, 0), Vector2(5984.22, -95.7761)]
+"values": [Vector2(5984.22, 0), Vector2(5984.22, 95.4834)]
 }
 tracks/22/type = "value"
 tracks/22/imported = false
 tracks/22/enabled = true
-tracks/22/path = NodePath("@Node2D@23683:position")
+tracks/22/path = NodePath("@Node2D@59131:position")
 tracks/22/interp = 1
 tracks/22/loop_wrap = true
 tracks/22/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(6192.52, 0), Vector2(6192.52, 98.2957)]
+"values": [Vector2(6192.52, 0), Vector2(6192.52, 5.93198)]
 }
 tracks/23/type = "value"
 tracks/23/imported = false
 tracks/23/enabled = true
-tracks/23/path = NodePath("@Node2D@23684:position")
+tracks/23/path = NodePath("@Node2D@59132:position")
 tracks/23/interp = 1
 tracks/23/loop_wrap = true
 tracks/23/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(6572.06, 0), Vector2(6572.06, -74.5209)]
+"values": [Vector2(6572.06, 0), Vector2(6572.06, -41.9509)]
 }
 tracks/24/type = "value"
 tracks/24/imported = false
 tracks/24/enabled = true
-tracks/24/path = NodePath("@Node2D@23685:position")
+tracks/24/path = NodePath("@Node2D@59133:position")
 tracks/24/interp = 1
 tracks/24/loop_wrap = true
 tracks/24/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(6828.59, 0), Vector2(6828.59, 62.6337)]
+"values": [Vector2(6828.59, 0), Vector2(6828.59, 114.677)]
 }
 tracks/25/type = "value"
 tracks/25/imported = false
 tracks/25/enabled = true
-tracks/25/path = NodePath("@Node2D@23686:position")
+tracks/25/path = NodePath("@Node2D@59134:position")
 tracks/25/interp = 1
 tracks/25/loop_wrap = true
 tracks/25/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(7187.86, 0), Vector2(7187.86, -76.6486)]
+"values": [Vector2(7187.86, 0), Vector2(7187.86, -63.8523)]
 }
 tracks/26/type = "value"
 tracks/26/imported = false
 tracks/26/enabled = true
-tracks/26/path = NodePath("@Node2D@23687:position")
+tracks/26/path = NodePath("@Node2D@59135:position")
 tracks/26/interp = 1
 tracks/26/loop_wrap = true
 tracks/26/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(7400.16, 0), Vector2(7400.16, 90.7002)]
+"values": [Vector2(7400.16, 0), Vector2(7400.16, 122.834)]
 }
 tracks/27/type = "value"
 tracks/27/imported = false
 tracks/27/enabled = true
-tracks/27/path = NodePath("@Node2D@23688:position")
+tracks/27/path = NodePath("@Node2D@59136:position")
 tracks/27/interp = 1
 tracks/27/loop_wrap = true
 tracks/27/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(7629.75, 0), Vector2(7629.75, -112.137)]
+"values": [Vector2(7629.75, 0), Vector2(7629.75, -23.9358)]
 }
 tracks/28/type = "value"
 tracks/28/imported = false
 tracks/28/enabled = true
-tracks/28/path = NodePath("@Node2D@23689:position")
+tracks/28/path = NodePath("@Node2D@59137:position")
 tracks/28/interp = 1
 tracks/28/loop_wrap = true
 tracks/28/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(8004.54, 0), Vector2(8004.54, 94.0585)]
+"values": [Vector2(8004.54, 0), Vector2(8004.54, 64.916)]
 }
 tracks/29/type = "value"
 tracks/29/imported = false
 tracks/29/enabled = true
-tracks/29/path = NodePath("@Node2D@23690:position")
+tracks/29/path = NodePath("@Node2D@59138:position")
 tracks/29/interp = 1
 tracks/29/loop_wrap = true
 tracks/29/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(8212.39, 0), Vector2(8212.39, 51.6545)]
+"values": [Vector2(8212.39, 0), Vector2(8212.39, -22.6932)]
 }
 tracks/30/type = "value"
 tracks/30/imported = false
 tracks/30/enabled = true
-tracks/30/path = NodePath("@Node2D@23691:position")
+tracks/30/path = NodePath("@Node2D@59139:position")
 tracks/30/interp = 1
 tracks/30/loop_wrap = true
 tracks/30/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(8590.93, 0), Vector2(8590.93, 55.0301)]
+"values": [Vector2(8590.93, 0), Vector2(8590.93, 79.9294)]
 }
 tracks/31/type = "value"
 tracks/31/imported = false
 tracks/31/enabled = true
-tracks/31/path = NodePath("@Node2D@23692:position")
+tracks/31/path = NodePath("@Node2D@59140:position")
 tracks/31/interp = 1
 tracks/31/loop_wrap = true
 tracks/31/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(8880.25, 0), Vector2(8880.25, 105.649)]
+"values": [Vector2(8880.25, 0), Vector2(8880.25, 65.8731)]
 }
 tracks/32/type = "value"
 tracks/32/imported = false
 tracks/32/enabled = true
-tracks/32/path = NodePath("@Node2D@23693:position")
+tracks/32/path = NodePath("@Node2D@59141:position")
 tracks/32/interp = 1
 tracks/32/loop_wrap = true
 tracks/32/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(9123.89, 0), Vector2(9123.89, -99.3303)]
+"values": [Vector2(9123.89, 0), Vector2(9123.89, 6.50359)]
 }
 tracks/33/type = "value"
 tracks/33/imported = false
 tracks/33/enabled = true
-tracks/33/path = NodePath("@Node2D@23694:position")
+tracks/33/path = NodePath("@Node2D@59142:position")
 tracks/33/interp = 1
 tracks/33/loop_wrap = true
 tracks/33/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(9433.73, 0), Vector2(9433.73, 75.1619)]
+"values": [Vector2(9433.73, 0), Vector2(9433.73, -52.8205)]
 }
 tracks/34/type = "value"
 tracks/34/imported = false
 tracks/34/enabled = true
-tracks/34/path = NodePath("@Node2D@23695:position")
+tracks/34/path = NodePath("@Node2D@59143:position")
 tracks/34/interp = 1
 tracks/34/loop_wrap = true
 tracks/34/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(9714.55, 0), Vector2(9714.55, 98.4316)]
+"values": [Vector2(9714.55, 0), Vector2(9714.55, 116.44)]
 }
 tracks/35/type = "value"
 tracks/35/imported = false
 tracks/35/enabled = true
-tracks/35/path = NodePath("@Node2D@23696:position")
+tracks/35/path = NodePath("@Node2D@59144:position")
 tracks/35/interp = 1
 tracks/35/loop_wrap = true
 tracks/35/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(9971.47, 0), Vector2(9971.47, -22.8796)]
+"values": [Vector2(9971.47, 0), Vector2(9971.47, -44.4821)]
 }
 tracks/36/type = "value"
 tracks/36/imported = false
 tracks/36/enabled = true
-tracks/36/path = NodePath("@Node2D@23697:position")
+tracks/36/path = NodePath("@Node2D@59145:position")
 tracks/36/interp = 1
 tracks/36/loop_wrap = true
 tracks/36/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(10230.1, 0), Vector2(10230.1, 106.495)]
+"values": [Vector2(10230.1, 0), Vector2(10230.1, 116.256)]
 }
 tracks/37/type = "value"
 tracks/37/imported = false
 tracks/37/enabled = true
-tracks/37/path = NodePath("@Node2D@23698:position")
+tracks/37/path = NodePath("@Node2D@59146:position")
 tracks/37/interp = 1
 tracks/37/loop_wrap = true
 tracks/37/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(10604.6, 0), Vector2(10604.6, 71.4302)]
+"values": [Vector2(10604.6, 0), Vector2(10604.6, -100.719)]
 }
 tracks/38/type = "value"
 tracks/38/imported = false
 tracks/38/enabled = true
-tracks/38/path = NodePath("@Node2D@23699:position")
+tracks/38/path = NodePath("@Node2D@59147:position")
 tracks/38/interp = 1
 tracks/38/loop_wrap = true
 tracks/38/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(10892.9, 0), Vector2(10892.9, -54.5975)]
+"values": [Vector2(10892.9, 0), Vector2(10892.9, 129.754)]
 }
 tracks/39/type = "value"
 tracks/39/imported = false
 tracks/39/enabled = true
-tracks/39/path = NodePath("@Node2D@23700:position")
+tracks/39/path = NodePath("@Node2D@59148:position")
 tracks/39/interp = 1
 tracks/39/loop_wrap = true
 tracks/39/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(11094, 0), Vector2(11094, 97.6785)]
+"values": [Vector2(11094, 0), Vector2(11094, -74.4546)]
 }
 tracks/40/type = "value"
 tracks/40/imported = false
 tracks/40/enabled = true
-tracks/40/path = NodePath("@Node2D@23701:position")
+tracks/40/path = NodePath("@Node2D@59149:position")
 tracks/40/interp = 1
 tracks/40/loop_wrap = true
 tracks/40/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(11366.7, 0), Vector2(11366.7, -26.0036)]
+"values": [Vector2(11366.7, 0), Vector2(11366.7, 126.571)]
 }
 tracks/41/type = "value"
 tracks/41/imported = false
 tracks/41/enabled = true
-tracks/41/path = NodePath("@Node2D@23702:position")
+tracks/41/path = NodePath("@Node2D@59150:position")
 tracks/41/interp = 1
 tracks/41/loop_wrap = true
 tracks/41/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(11764.6, 0), Vector2(11764.6, 99.9585)]
+"values": [Vector2(11764.6, 0), Vector2(11764.6, 44.9728)]
 }
 tracks/42/type = "value"
 tracks/42/imported = false
 tracks/42/enabled = true
-tracks/42/path = NodePath("@Node2D@23703:position")
+tracks/42/path = NodePath("@Node2D@59151:position")
 tracks/42/interp = 1
 tracks/42/loop_wrap = true
 tracks/42/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(12032.2, 0), Vector2(12032.2, 4.84999)]
+"values": [Vector2(12032.2, 0), Vector2(12032.2, -12.8126)]
 }
 tracks/43/type = "value"
 tracks/43/imported = false
 tracks/43/enabled = true
-tracks/43/path = NodePath("@Node2D@23704:position")
+tracks/43/path = NodePath("@Node2D@59152:position")
 tracks/43/interp = 1
 tracks/43/loop_wrap = true
 tracks/43/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(12327.9, 0), Vector2(12327.9, 2.61767)]
+"values": [Vector2(12327.9, 0), Vector2(12327.9, 44.2084)]
 }
 tracks/44/type = "value"
 tracks/44/imported = false
 tracks/44/enabled = true
-tracks/44/path = NodePath("@Node2D@23705:position")
+tracks/44/path = NodePath("@Node2D@59153:position")
 tracks/44/interp = 1
 tracks/44/loop_wrap = true
 tracks/44/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(12604.3, 0), Vector2(12604.3, 1.01724)]
+"values": [Vector2(12604.3, 0), Vector2(12604.3, -17.2167)]
 }
 tracks/45/type = "value"
 tracks/45/imported = false
 tracks/45/enabled = true
-tracks/45/path = NodePath("@Node2D@23706:position")
+tracks/45/path = NodePath("@Node2D@59154:position")
 tracks/45/interp = 1
 tracks/45/loop_wrap = true
 tracks/45/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(12922.1, 0), Vector2(12922.1, 92.2964)]
+"values": [Vector2(12922.1, 0), Vector2(12922.1, 116.794)]
 }
 tracks/46/type = "value"
 tracks/46/imported = false
 tracks/46/enabled = true
-tracks/46/path = NodePath("@Node2D@23707:position")
+tracks/46/path = NodePath("@Node2D@59155:position")
 tracks/46/interp = 1
 tracks/46/loop_wrap = true
 tracks/46/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(13277.2, 0), Vector2(13277.2, -15.3654)]
+"values": [Vector2(13277.2, 0), Vector2(13277.2, 100.194)]
 }
 tracks/47/type = "value"
 tracks/47/imported = false
 tracks/47/enabled = true
-tracks/47/path = NodePath("@Node2D@23708:position")
+tracks/47/path = NodePath("@Node2D@59156:position")
 tracks/47/interp = 1
 tracks/47/loop_wrap = true
 tracks/47/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(13548.6, 0), Vector2(13548.6, 80.3543)]
+"values": [Vector2(13548.6, 0), Vector2(13548.6, -114.275)]
 }
 tracks/48/type = "value"
 tracks/48/imported = false
 tracks/48/enabled = true
-tracks/48/path = NodePath("@Node2D@23709:position")
+tracks/48/path = NodePath("@Node2D@59157:position")
 tracks/48/interp = 1
 tracks/48/loop_wrap = true
 tracks/48/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(13832.4, 0), Vector2(13832.4, 30.7335)]
+"values": [Vector2(13832.4, 0), Vector2(13832.4, 192.916)]
 }
 tracks/49/type = "value"
 tracks/49/imported = false
 tracks/49/enabled = true
-tracks/49/path = NodePath("@Node2D@23710:position")
+tracks/49/path = NodePath("@Node2D@59158:position")
 tracks/49/interp = 1
 tracks/49/loop_wrap = true
 tracks/49/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(14230.1, 0), Vector2(14230.1, -109.931)]
+"values": [Vector2(14230.1, 0), Vector2(14230.1, -56.0928)]
 }
 tracks/50/type = "value"
 tracks/50/imported = false
 tracks/50/enabled = true
-tracks/50/path = NodePath("@Node2D@23711:position")
+tracks/50/path = NodePath("@Node2D@59159:position")
 tracks/50/interp = 1
 tracks/50/loop_wrap = true
 tracks/50/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(14498.8, 0), Vector2(14498.8, 118.439)]
-}
-tracks/51/type = "value"
-tracks/51/imported = false
-tracks/51/enabled = true
-tracks/51/path = NodePath("@Node2D@23712:position")
-tracks/51/interp = 1
-tracks/51/loop_wrap = true
-tracks/51/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(14856, 0), Vector2(14856, -21.3553)]
-}
-tracks/52/type = "value"
-tracks/52/imported = false
-tracks/52/enabled = true
-tracks/52/path = NodePath("@Node2D@23713:position")
-tracks/52/interp = 1
-tracks/52/loop_wrap = true
-tracks/52/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(15222.6, 0), Vector2(15222.6, 115.398)]
-}
-tracks/53/type = "value"
-tracks/53/imported = false
-tracks/53/enabled = true
-tracks/53/path = NodePath("@Node2D@23714:position")
-tracks/53/interp = 1
-tracks/53/loop_wrap = true
-tracks/53/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(15563.7, 0), Vector2(15563.7, -31.7524)]
-}
-tracks/54/type = "value"
-tracks/54/imported = false
-tracks/54/enabled = true
-tracks/54/path = NodePath("@Node2D@23715:position")
-tracks/54/interp = 1
-tracks/54/loop_wrap = true
-tracks/54/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(15790.4, 0), Vector2(15790.4, 112.888)]
-}
-tracks/55/type = "value"
-tracks/55/imported = false
-tracks/55/enabled = true
-tracks/55/path = NodePath("@Node2D@23716:position")
-tracks/55/interp = 1
-tracks/55/loop_wrap = true
-tracks/55/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(16044.5, 0), Vector2(16044.5, -118.461)]
-}
-tracks/56/type = "value"
-tracks/56/imported = false
-tracks/56/enabled = true
-tracks/56/path = NodePath("@Node2D@23717:position")
-tracks/56/interp = 1
-tracks/56/loop_wrap = true
-tracks/56/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(16341.4, 0), Vector2(16341.4, 73.2295)]
-}
-tracks/57/type = "value"
-tracks/57/imported = false
-tracks/57/enabled = true
-tracks/57/path = NodePath("@Node2D@23718:position")
-tracks/57/interp = 1
-tracks/57/loop_wrap = true
-tracks/57/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(16583.6, 0), Vector2(16583.6, 96.1361)]
-}
-tracks/58/type = "value"
-tracks/58/imported = false
-tracks/58/enabled = true
-tracks/58/path = NodePath("@Node2D@23719:position")
-tracks/58/interp = 1
-tracks/58/loop_wrap = true
-tracks/58/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(16956.1, 0), Vector2(16956.1, -110.785)]
-}
-tracks/59/type = "value"
-tracks/59/imported = false
-tracks/59/enabled = true
-tracks/59/path = NodePath("@Node2D@23720:position")
-tracks/59/interp = 1
-tracks/59/loop_wrap = true
-tracks/59/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(17179.8, 0), Vector2(17179.8, 105.971)]
-}
-tracks/60/type = "value"
-tracks/60/imported = false
-tracks/60/enabled = true
-tracks/60/path = NodePath("@Node2D@23721:position")
-tracks/60/interp = 1
-tracks/60/loop_wrap = true
-tracks/60/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(17472.1, 0), Vector2(17472.1, 53.4132)]
-}
-tracks/61/type = "value"
-tracks/61/imported = false
-tracks/61/enabled = true
-tracks/61/path = NodePath("@Node2D@23722:position")
-tracks/61/interp = 1
-tracks/61/loop_wrap = true
-tracks/61/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(17706.1, 0), Vector2(17706.1, 8.1741)]
-}
-tracks/62/type = "value"
-tracks/62/imported = false
-tracks/62/enabled = true
-tracks/62/path = NodePath("@Node2D@23723:position")
-tracks/62/interp = 1
-tracks/62/loop_wrap = true
-tracks/62/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(18089.2, 0), Vector2(18089.2, 22.1844)]
-}
-tracks/63/type = "value"
-tracks/63/imported = false
-tracks/63/enabled = true
-tracks/63/path = NodePath("@Node2D@23724:position")
-tracks/63/interp = 1
-tracks/63/loop_wrap = true
-tracks/63/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(18317.3, 0), Vector2(18317.3, -88.6882)]
-}
-tracks/64/type = "value"
-tracks/64/imported = false
-tracks/64/enabled = true
-tracks/64/path = NodePath("@Node2D@23725:position")
-tracks/64/interp = 1
-tracks/64/loop_wrap = true
-tracks/64/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(18694.8, 0), Vector2(18694.8, 103.343)]
-}
-tracks/65/type = "value"
-tracks/65/imported = false
-tracks/65/enabled = true
-tracks/65/path = NodePath("@Node2D@23726:position")
-tracks/65/interp = 1
-tracks/65/loop_wrap = true
-tracks/65/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(19029.9, 0), Vector2(19029.9, -46.0155)]
-}
-tracks/66/type = "value"
-tracks/66/imported = false
-tracks/66/enabled = true
-tracks/66/path = NodePath("@Node2D@23727:position")
-tracks/66/interp = 1
-tracks/66/loop_wrap = true
-tracks/66/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(19255.6, 0), Vector2(19255.6, 112.987)]
-}
-tracks/67/type = "value"
-tracks/67/imported = false
-tracks/67/enabled = true
-tracks/67/path = NodePath("@Node2D@23728:position")
-tracks/67/interp = 1
-tracks/67/loop_wrap = true
-tracks/67/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(19475.8, 0), Vector2(19475.8, 74.2568)]
-}
-tracks/68/type = "value"
-tracks/68/imported = false
-tracks/68/enabled = true
-tracks/68/path = NodePath("@Node2D@23729:position")
-tracks/68/interp = 1
-tracks/68/loop_wrap = true
-tracks/68/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(19852.8, 0), Vector2(19852.8, -87.3233)]
-}
-tracks/69/type = "value"
-tracks/69/imported = false
-tracks/69/enabled = true
-tracks/69/path = NodePath("@Node2D@23730:position")
-tracks/69/interp = 1
-tracks/69/loop_wrap = true
-tracks/69/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(20056.5, 0), Vector2(20056.5, 96.9693)]
-}
-tracks/70/type = "value"
-tracks/70/imported = false
-tracks/70/enabled = true
-tracks/70/path = NodePath("@Node2D@23731:position")
-tracks/70/interp = 1
-tracks/70/loop_wrap = true
-tracks/70/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(20432.8, 0), Vector2(20432.8, -34.9874)]
-}
-tracks/71/type = "value"
-tracks/71/imported = false
-tracks/71/enabled = true
-tracks/71/path = NodePath("@Node2D@23732:position")
-tracks/71/interp = 1
-tracks/71/loop_wrap = true
-tracks/71/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(20717.7, 0), Vector2(20717.7, 72.9549)]
-}
-tracks/72/type = "value"
-tracks/72/imported = false
-tracks/72/enabled = true
-tracks/72/path = NodePath("@Node2D@23733:position")
-tracks/72/interp = 1
-tracks/72/loop_wrap = true
-tracks/72/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(21059.3, 0), Vector2(21059.3, 13.911)]
-}
-tracks/73/type = "value"
-tracks/73/imported = false
-tracks/73/enabled = true
-tracks/73/path = NodePath("@Node2D@23734:position")
-tracks/73/interp = 1
-tracks/73/loop_wrap = true
-tracks/73/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(21364.2, 0), Vector2(21364.2, 16.5146)]
-}
-tracks/74/type = "value"
-tracks/74/imported = false
-tracks/74/enabled = true
-tracks/74/path = NodePath("@Node2D@23735:position")
-tracks/74/interp = 1
-tracks/74/loop_wrap = true
-tracks/74/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(21629.2, 0), Vector2(21629.2, -67.8406)]
-}
-tracks/75/type = "value"
-tracks/75/imported = false
-tracks/75/enabled = true
-tracks/75/path = NodePath("@Node2D@23736:position")
-tracks/75/interp = 1
-tracks/75/loop_wrap = true
-tracks/75/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(21999.7, 0), Vector2(21999.7, 79.7103)]
-}
-tracks/76/type = "value"
-tracks/76/imported = false
-tracks/76/enabled = true
-tracks/76/path = NodePath("@Node2D@23737:position")
-tracks/76/interp = 1
-tracks/76/loop_wrap = true
-tracks/76/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(22246.5, 0), Vector2(22246.5, 26.5055)]
-}
-tracks/77/type = "value"
-tracks/77/imported = false
-tracks/77/enabled = true
-tracks/77/path = NodePath("@Node2D@23738:position")
-tracks/77/interp = 1
-tracks/77/loop_wrap = true
-tracks/77/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(22573, 0), Vector2(22573, -1.59267)]
-}
-tracks/78/type = "value"
-tracks/78/imported = false
-tracks/78/enabled = true
-tracks/78/path = NodePath("@Node2D@23739:position")
-tracks/78/interp = 1
-tracks/78/loop_wrap = true
-tracks/78/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(22853, 0), Vector2(22853, 91.4384)]
-}
-tracks/79/type = "value"
-tracks/79/imported = false
-tracks/79/enabled = true
-tracks/79/path = NodePath("@Node2D@23740:position")
-tracks/79/interp = 1
-tracks/79/loop_wrap = true
-tracks/79/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(23100.3, 0), Vector2(23100.3, 40.0409)]
-}
-tracks/80/type = "value"
-tracks/80/imported = false
-tracks/80/enabled = true
-tracks/80/path = NodePath("@Node2D@23741:position")
-tracks/80/interp = 1
-tracks/80/loop_wrap = true
-tracks/80/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(23381.4, 0), Vector2(23381.4, -2.29062)]
-}
-tracks/81/type = "value"
-tracks/81/imported = false
-tracks/81/enabled = true
-tracks/81/path = NodePath("@Node2D@23742:position")
-tracks/81/interp = 1
-tracks/81/loop_wrap = true
-tracks/81/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(23674, 0), Vector2(23674, 65.6135)]
-}
-tracks/82/type = "value"
-tracks/82/imported = false
-tracks/82/enabled = true
-tracks/82/path = NodePath("@Node2D@23743:position")
-tracks/82/interp = 1
-tracks/82/loop_wrap = true
-tracks/82/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(24028.9, 0), Vector2(24028.9, 1.50599)]
-}
-tracks/83/type = "value"
-tracks/83/imported = false
-tracks/83/enabled = true
-tracks/83/path = NodePath("@Node2D@23744:position")
-tracks/83/interp = 1
-tracks/83/loop_wrap = true
-tracks/83/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(24334.3, 0), Vector2(24334.3, -79.7189)]
-}
-tracks/84/type = "value"
-tracks/84/imported = false
-tracks/84/enabled = true
-tracks/84/path = NodePath("@Node2D@23745:position")
-tracks/84/interp = 1
-tracks/84/loop_wrap = true
-tracks/84/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(24590.3, 0), Vector2(24590.3, 100.694)]
-}
-tracks/85/type = "value"
-tracks/85/imported = false
-tracks/85/enabled = true
-tracks/85/path = NodePath("@Node2D@23746:position")
-tracks/85/interp = 1
-tracks/85/loop_wrap = true
-tracks/85/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(24940.7, 0), Vector2(24940.7, -1.61878)]
-}
-tracks/86/type = "value"
-tracks/86/imported = false
-tracks/86/enabled = true
-tracks/86/path = NodePath("@Node2D@23747:position")
-tracks/86/interp = 1
-tracks/86/loop_wrap = true
-tracks/86/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(25203.6, 0), Vector2(25203.6, 92.5273)]
-}
-tracks/87/type = "value"
-tracks/87/imported = false
-tracks/87/enabled = true
-tracks/87/path = NodePath("@Node2D@23748:position")
-tracks/87/interp = 1
-tracks/87/loop_wrap = true
-tracks/87/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(25579.5, 0), Vector2(25579.5, -64.7118)]
-}
-tracks/88/type = "value"
-tracks/88/imported = false
-tracks/88/enabled = true
-tracks/88/path = NodePath("@Node2D@23749:position")
-tracks/88/interp = 1
-tracks/88/loop_wrap = true
-tracks/88/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(25795.6, 0), Vector2(25795.6, 115.585)]
-}
-tracks/89/type = "value"
-tracks/89/imported = false
-tracks/89/enabled = true
-tracks/89/path = NodePath("@Node2D@23750:position")
-tracks/89/interp = 1
-tracks/89/loop_wrap = true
-tracks/89/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(26171.6, 0), Vector2(26171.6, -39.8306)]
-}
-tracks/90/type = "value"
-tracks/90/imported = false
-tracks/90/enabled = true
-tracks/90/path = NodePath("@Node2D@23751:position")
-tracks/90/interp = 1
-tracks/90/loop_wrap = true
-tracks/90/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(26409.6, 0), Vector2(26409.6, 115.755)]
-}
-tracks/91/type = "value"
-tracks/91/imported = false
-tracks/91/enabled = true
-tracks/91/path = NodePath("@Node2D@23752:position")
-tracks/91/interp = 1
-tracks/91/loop_wrap = true
-tracks/91/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(26764.1, 0), Vector2(26764.1, -90.2093)]
-}
-tracks/92/type = "value"
-tracks/92/imported = false
-tracks/92/enabled = true
-tracks/92/path = NodePath("@Node2D@23753:position")
-tracks/92/interp = 1
-tracks/92/loop_wrap = true
-tracks/92/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(27101.6, 0), Vector2(27101.6, 74.2193)]
-}
-tracks/93/type = "value"
-tracks/93/imported = false
-tracks/93/enabled = true
-tracks/93/path = NodePath("@Node2D@23754:position")
-tracks/93/interp = 1
-tracks/93/loop_wrap = true
-tracks/93/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(27390.9, 0), Vector2(27390.9, 90.2434)]
-}
-tracks/94/type = "value"
-tracks/94/imported = false
-tracks/94/enabled = true
-tracks/94/path = NodePath("@Node2D@23755:position")
-tracks/94/interp = 1
-tracks/94/loop_wrap = true
-tracks/94/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(27630.3, 0), Vector2(27630.3, 92.8056)]
-}
-tracks/95/type = "value"
-tracks/95/imported = false
-tracks/95/enabled = true
-tracks/95/path = NodePath("@Node2D@23756:position")
-tracks/95/interp = 1
-tracks/95/loop_wrap = true
-tracks/95/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(27915.9, 0), Vector2(27915.9, -20.6183)]
-}
-tracks/96/type = "value"
-tracks/96/imported = false
-tracks/96/enabled = true
-tracks/96/path = NodePath("@Node2D@23757:position")
-tracks/96/interp = 1
-tracks/96/loop_wrap = true
-tracks/96/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(28308.4, 0), Vector2(28308.4, 77.1684)]
-}
-tracks/97/type = "value"
-tracks/97/imported = false
-tracks/97/enabled = true
-tracks/97/path = NodePath("@Node2D@23758:position")
-tracks/97/interp = 1
-tracks/97/loop_wrap = true
-tracks/97/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(28691.9, 0), Vector2(28691.9, 3.1668)]
-}
-tracks/98/type = "value"
-tracks/98/imported = false
-tracks/98/enabled = true
-tracks/98/path = NodePath("@Node2D@23759:position")
-tracks/98/interp = 1
-tracks/98/loop_wrap = true
-tracks/98/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(28896.7, 0), Vector2(28896.7, 105.179)]
-}
-tracks/99/type = "value"
-tracks/99/imported = false
-tracks/99/enabled = true
-tracks/99/path = NodePath("@Node2D@23760:position")
-tracks/99/interp = 1
-tracks/99/loop_wrap = true
-tracks/99/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(29162.4, 0), Vector2(29162.4, -100.706)]
-}
-tracks/100/type = "value"
-tracks/100/imported = false
-tracks/100/enabled = true
-tracks/100/path = NodePath("@Node2D@23761:position")
-tracks/100/interp = 1
-tracks/100/loop_wrap = true
-tracks/100/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(29415.6, 0), Vector2(29415.6, 94.6857)]
+"values": [Vector2(14498.8, 0), Vector2(14498.8, 112.528)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_kxmgb"]
@@ -1272,6 +672,7 @@ script = ExtResource("2_kxmgb")
 map = NodePath("..")
 line_2d = NodePath("../LineBody/Line2D")
 line_seed = 2
+line_length = 50
 auto_update = true
 
 [node name="InputComponent" type="Node" parent="."]
@@ -1300,7 +701,6 @@ size_flags_vertical = 3
 color = Color(0, 0, 0, 1)
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="ParallaxBackground/ParallaxLayer"]
-visible = false
 position = Vector2(494, 279)
 amount = 100
 texture = ExtResource("2_lgq1i")
@@ -1312,7 +712,7 @@ local_coords = true
 process_material = SubResource("ParticleProcessMaterial_5jdw0")
 
 [node name="Spawn" type="Node2D" parent="." groups=["spawn"]]
-position = Vector2(4323, -577)
+position = Vector2(163, -183)
 
 [node name="LineBody" type="StaticBody2D" parent="."]
 unique_name_in_owner = true
@@ -1324,7 +724,7 @@ unique_name_in_owner = true
 
 [node name="Line2D" type="Line2D" parent="LineBody"]
 unique_name_in_owner = true
-points = PackedVector2Array(1562.52, 0, 1608.57, 0, 1636.09, 0, 1664.89, 0, 1693.69, 0, 1721.21, 0, 1767.26, 0, 1796.09, 0, 1841.4, 0, 1868.52, 0, 1897.7, 0, 1928.25, 0, 1959.49, 0, 1990.73, 0, 2021.29, 0, 2050.47, 0, 2077.59, 0, 2122.89, 0, 2151.72, 0, 2177.97, 0, 2216.5, 0, 2263.22, 0, 2288.37, 0, 2314.03, 0, 2339.69, 0, 2364.84, 0, 2411.56, 0, 2450.09, 0, 2476.34, 0, 2499.74, 0, 2530.77, 0, 2566.87, 0, 2605.51, 0, 2644.15, 0, 2680.25, 0, 2711.27, 0, 2734.67, 0, 2760.36, 0, 2797.41, 0, 2842.03, 0, 2890.44, 0, 2938.84, 0, 2983.46, 0, 3020.51, 0, 3046.2, 0, 3072.93, 0, 3112.72, 0, 3161.21, 0, 3187.36, 0, 3214.05, 0, 3240.75, 0, 3266.9, 0, 3315.39, 0, 3355.17, 0, 3381.9, 0, 3405.59, 0, 3437.36, 0, 3474.51, 0, 3514.36, 0, 3554.21, 0, 3591.36, 0, 3623.13, 0, 3646.82, 0, 3669.1, 0, 3697.17, 0, 3729.09, 0, 3762.95, 0, 3796.8, 0, 3828.72, 0, 3856.79, 0, 3879.07, 0, 3904, 0, 3939.05, 0, 3980.83, 0, 4025.99, 0, 4071.14, 0, 4112.93, 0, 4147.97, 0, 4172.9, 0, 4199.58, 0, 4239.21, 0, 4287.5, 0, 4313.53, 0, 4340.1, 0, 4366.67, 0, 4392.71, 0, 4440.99, 0, 4480.63, 0, 4507.3, 0, 4530.02, 0, 4559.22, 0, 4592.75, 0, 4628.45, 0, 4664.14, 0, 4697.67, 0, 4726.88, 0, 4749.59, 0, 4772.06, 0, 4800.61, 0, 4833.22, 0, 4867.85, 0, 4902.49, 0, 4935.1, 0, 4963.65, 0, 4986.12, 0, 5014.45, 0, 5058.48, 0, 5084.74, 0, 5112.96, 0, 5142.49, 0, 5172.67, 0, 5202.85, 0, 5232.38, 0, 5260.6, 0, 5286.86, 0, 5330.89, 0, 5359.22, 0)
+points = PackedVector2Array(1767.26, 45.2655, 1796.09, 41.2729, 1841.4, 30.7468, 1868.52, 23.7143, 1897.7, 15.8652, 1928.25, 7.47158, 1959.49, -1.19425, 1990.73, -9.86008, 2021.29, -18.2537, 2050.47, -26.1028, 2077.59, -33.1353, 2122.89, -43.6614, 2151.72, -47.654, 2177.97, -42.1637, 2216.5, -27.6894, 2239.09, -18.019, 2263.22, -7.22566, 2288.37, 4.31638, 2314.03, 16.2328, 2339.69, 28.1491, 2364.84, 39.6912, 2388.96, 50.4845, 2411.56, 60.1549, 2450.09, 74.6292, 2476.34, 80.1195, 2499.74, 74.9079, 2530.77, 61.168, 2566.87, 41.7427, 2605.51, 19.4747, 2644.15, -2.79328, 2680.25, -22.2186, 2711.27, -35.9584, 2734.67, -41.1701, 2760.36, -36.6474, 2797.41, -24.7241, 2842.03, -7.86695, 2866, 1.64088, 2890.44, 11.4571, 2914.88, 21.2733, 2938.84, 30.7811, 2983.46, 47.6382, 3020.51, 59.5616, 3046.2, 64.0842, 3072.93, 59.4023, 3112.72, 47.0591, 3136.15, 38.8126, 3161.21, 29.6084, 3187.36, 19.7657, 3214.05, 9.60386, 3240.75, -0.558003, 3266.9, -10.4006, 3291.96, -19.6048, 3315.39, -27.8514, 3355.17, -40.1946, 3381.9, -44.8765, 3405.59, -40.1351, 3437.36, -27.6351, 3474.51, -9.9627, 3514.36, 10.2959, 3554.21, 30.5546, 3591.36, 48.227, 3623.13, 60.727, 3646.82, 65.4683, 3669.1, 63.5956, 3697.17, 58.6584, 3729.09, 51.6781, 3762.95, 43.6764, 3796.8, 35.6747, 3828.72, 28.6944, 3856.79, 23.7572, 3879.07, 21.8845, 3904, 18.9529, 3939.05, 11.2243, 3980.83, 0.297605, 4025.99, -12.2281, 4071.14, -24.7538, 4112.93, -35.6805, 4147.97, -43.4091, 4172.9, -46.3407, 4199.58, -40.4983, 4239.21, -25.0956, 4262.55, -14.8051, 4287.5, -3.31949, 4313.53, 8.9628, 4340.1, 21.6434, 4366.67, 34.3241, 4392.71, 46.6063, 4417.66, 58.0919, 4440.99, 68.3825, 4480.63, 83.7851, 4507.3, 89.6275, 4530.02, 87.8408, 4559.22, 83.1302, 4592.75, 76.4704, 4628.45, 68.8361, 4664.14, 61.2017, 4697.67, 54.5419, 4726.88, 49.8314, 4749.59, 48.0446, 4772.06, 43.3988, 4800.61, 31.1508, 4833.22, 13.8346, 4867.85, -6.01559, 4902.49, -25.8658, 4935.1, -43.182, 4963.65, -55.43, 4986.12, -60.0758, 5014.45, -54.519, 5058.48, -39.8691, 5084.74, -30.0815, 5112.96, -19.1573, 5142.49, -7.47526, 5172.67, 4.5856, 5202.85, 16.6465, 5232.38, 28.3285, 5260.6, 39.2527, 5286.86, 49.0403, 5330.89, 63.6902, 5359.22, 69.247)
 width = 4.0
 texture = ExtResource("4_kffv2")
 texture_mode = 1
@@ -1363,319 +763,170 @@ texture = ExtResource("6_7lyie")
 
 [node name="GhostDots0" type="Node2D" parent="."]
 unique_name_in_owner = true
-modulate = Color(1, 0.945098, 0.74902, 1)
+modulate = Color(0.593134, 0.593134, 0.593134, 1)
 
 [node name="GhostDots1" type="Node2D" parent="."]
 unique_name_in_owner = true
-modulate = Color(1, 0.752941, 1, 0)
+modulate = Color(0.593134, 0.593134, 0.593134, 1)
 
 [node name="LinePoints" type="Node2D" parent="."]
 
-[node name="@Node2D@23660" type="Node2D" parent="." groups=["line_points_container"]]
+[node name="@Node2D@59108" type="Node2D" parent="." groups=["line_points_container"]]
 
-[node name="@Node2D@23661" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
+[node name="@Node2D@59109" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(0, -52)
 
-[node name="@Node2D@23662" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(340.576, 0)
+[node name="@Node2D@59110" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(340.576, 69.3445)
 
-[node name="@Node2D@23663" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(544.993, 0)
+[node name="@Node2D@59111" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(544.993, 25.6441)
 
-[node name="@Node2D@23664" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(936.691, 0)
+[node name="@Node2D@59112" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(936.691, -45.7319)
 
-[node name="@Node2D@23665" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(1140.88, 0)
+[node name="@Node2D@59113" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(1140.88, 83.6092)
 
-[node name="@Node2D@23666" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(1351.85, 0)
+[node name="@Node2D@59114" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(1351.85, -1.95209)
 
-[node name="@Node2D@23667" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(1562.52, 0)
+[node name="@Node2D@59115" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(1562.52, 16.2497)
 
-[node name="@Node2D@23668" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(1767.26, 0)
+[node name="@Node2D@59116" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(1767.26, 45.2655)
 
-[node name="@Node2D@23669" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(2151.72, 0)
+[node name="@Node2D@59117" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(2151.72, -47.654)
 
-[node name="@Node2D@23670" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(2476.34, 0)
+[node name="@Node2D@59118" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(2476.34, 80.1195)
 
-[node name="@Node2D@23671" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(2734.67, 0)
+[node name="@Node2D@59119" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(2734.67, -41.1701)
 
-[node name="@Node2D@23672" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(3046.2, 0)
+[node name="@Node2D@59120" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(3046.2, 64.0842)
 
-[node name="@Node2D@23673" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(3381.9, 0)
+[node name="@Node2D@59121" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(3381.9, -44.8765)
 
-[node name="@Node2D@23674" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(3646.82, 0)
+[node name="@Node2D@59122" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(3646.82, 65.4683)
 
-[node name="@Node2D@23675" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(3879.07, 0)
+[node name="@Node2D@59123" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(3879.07, 21.8845)
 
-[node name="@Node2D@23676" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(4172.9, 0)
+[node name="@Node2D@59124" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(4172.9, -46.3407)
 
-[node name="@Node2D@23677" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(4507.3, 0)
+[node name="@Node2D@59125" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(4507.3, 89.6275)
 
-[node name="@Node2D@23678" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(4749.59, 0)
+[node name="@Node2D@59126" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(4749.59, 48.0446)
 
-[node name="@Node2D@23679" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(4986.12, 0)
+[node name="@Node2D@59127" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(4986.12, -60.0758)
 
-[node name="@Node2D@23680" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(5359.22, 0)
+[node name="@Node2D@59128" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(5359.22, 69.247)
 
-[node name="@Node2D@23681" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(5631.48, 0)
+[node name="@Node2D@59129" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(5631.48, -9.40585)
 
-[node name="@Node2D@23682" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(5984.22, 0)
+[node name="@Node2D@59130" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(5984.22, 49.6514)
 
-[node name="@Node2D@23683" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(6192.52, 0)
+[node name="@Node2D@59131" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(6192.52, 3.08463)
 
-[node name="@Node2D@23684" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(6572.06, 0)
+[node name="@Node2D@59132" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(6572.06, -21.8145)
 
-[node name="@Node2D@23685" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(6828.59, 0)
+[node name="@Node2D@59133" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(6828.59, 59.6321)
 
-[node name="@Node2D@23686" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(7187.86, 0)
+[node name="@Node2D@59134" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(7187.86, -33.2032)
 
-[node name="@Node2D@23687" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(7400.16, 0)
+[node name="@Node2D@59135" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(7400.16, 63.8735)
 
-[node name="@Node2D@23688" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(7629.75, 0)
+[node name="@Node2D@59136" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(7629.75, -12.4466)
 
-[node name="@Node2D@23689" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(8004.54, 0)
+[node name="@Node2D@59137" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(8004.54, 33.7563)
 
-[node name="@Node2D@23690" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(8212.39, 0)
+[node name="@Node2D@59138" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(8212.39, -11.8004)
 
-[node name="@Node2D@23691" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(8590.93, 0)
+[node name="@Node2D@59139" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(8590.93, 41.5633)
 
-[node name="@Node2D@23692" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(8880.25, 0)
+[node name="@Node2D@59140" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(8880.25, 34.254)
 
-[node name="@Node2D@23693" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(9123.89, 0)
+[node name="@Node2D@59141" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(9123.89, 3.38187)
 
-[node name="@Node2D@23694" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(9433.73, 0)
+[node name="@Node2D@59142" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(9433.73, -27.4667)
 
-[node name="@Node2D@23695" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(9714.55, 0)
+[node name="@Node2D@59143" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(9714.55, 60.5487)
 
-[node name="@Node2D@23696" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(9971.47, 0)
+[node name="@Node2D@59144" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(9971.47, -23.1307)
 
-[node name="@Node2D@23697" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(10230.1, 0)
+[node name="@Node2D@59145" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(10230.1, 60.4534)
 
-[node name="@Node2D@23698" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(10604.6, 0)
+[node name="@Node2D@59146" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(10604.6, -52.3741)
 
-[node name="@Node2D@23699" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(10892.9, 0)
+[node name="@Node2D@59147" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(10892.9, 67.4719)
 
-[node name="@Node2D@23700" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(11094, 0)
+[node name="@Node2D@59148" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(11094, -38.7164)
 
-[node name="@Node2D@23701" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(11366.7, 0)
+[node name="@Node2D@59149" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(11366.7, 65.8171)
 
-[node name="@Node2D@23702" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(11764.6, 0)
+[node name="@Node2D@59150" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(11764.6, 23.3859)
 
-[node name="@Node2D@23703" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(12032.2, 0)
+[node name="@Node2D@59151" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(12032.2, -6.66255)
 
-[node name="@Node2D@23704" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(12327.9, 0)
+[node name="@Node2D@59152" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(12327.9, 22.9884)
 
-[node name="@Node2D@23705" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(12604.3, 0)
+[node name="@Node2D@59153" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(12604.3, -8.95266)
 
-[node name="@Node2D@23706" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(12922.1, 0)
+[node name="@Node2D@59154" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(12922.1, 60.7331)
 
-[node name="@Node2D@23707" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(13277.2, 0)
+[node name="@Node2D@59155" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(13277.2, 52.1006)
 
-[node name="@Node2D@23708" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(13548.6, 0)
+[node name="@Node2D@59156" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(13548.6, -59.4229)
 
-[node name="@Node2D@23709" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(13832.4, 0)
+[node name="@Node2D@59157" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(13832.4, 100.316)
 
-[node name="@Node2D@23710" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(14230.1, 0)
+[node name="@Node2D@59158" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(14230.1, -29.1683)
 
-[node name="@Node2D@23711" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(14498.8, 0)
+[node name="@Node2D@59159" type="Node2D" parent="@Node2D@59108" groups=["line_point"]]
+position = Vector2(14498.8, 58.5147)
 
-[node name="@Node2D@23712" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(14856, 0)
-
-[node name="@Node2D@23713" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(15222.6, 0)
-
-[node name="@Node2D@23714" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(15563.7, 0)
-
-[node name="@Node2D@23715" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(15790.4, 0)
-
-[node name="@Node2D@23716" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(16044.5, 0)
-
-[node name="@Node2D@23717" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(16341.4, 0)
-
-[node name="@Node2D@23718" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(16583.6, 0)
-
-[node name="@Node2D@23719" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(16956.1, 0)
-
-[node name="@Node2D@23720" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(17179.8, 0)
-
-[node name="@Node2D@23721" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(17472.1, 0)
-
-[node name="@Node2D@23722" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(17706.1, 0)
-
-[node name="@Node2D@23723" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(18089.2, 0)
-
-[node name="@Node2D@23724" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(18317.3, 0)
-
-[node name="@Node2D@23725" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(18694.8, 0)
-
-[node name="@Node2D@23726" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(19029.9, 0)
-
-[node name="@Node2D@23727" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(19255.6, 0)
-
-[node name="@Node2D@23728" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(19475.8, 0)
-
-[node name="@Node2D@23729" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(19852.8, 0)
-
-[node name="@Node2D@23730" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(20056.5, 0)
-
-[node name="@Node2D@23731" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(20432.8, 0)
-
-[node name="@Node2D@23732" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(20717.7, 0)
-
-[node name="@Node2D@23733" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(21059.3, 0)
-
-[node name="@Node2D@23734" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(21364.2, 0)
-
-[node name="@Node2D@23735" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(21629.2, 0)
-
-[node name="@Node2D@23736" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(21999.7, 0)
-
-[node name="@Node2D@23737" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(22246.5, 0)
-
-[node name="@Node2D@23738" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(22573, 0)
-
-[node name="@Node2D@23739" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(22853, 0)
-
-[node name="@Node2D@23740" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(23100.3, 0)
-
-[node name="@Node2D@23741" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(23381.4, 0)
-
-[node name="@Node2D@23742" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(23674, 0)
-
-[node name="@Node2D@23743" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(24028.9, 0)
-
-[node name="@Node2D@23744" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(24334.3, 0)
-
-[node name="@Node2D@23745" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(24590.3, 0)
-
-[node name="@Node2D@23746" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(24940.7, 0)
-
-[node name="@Node2D@23747" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(25203.6, 0)
-
-[node name="@Node2D@23748" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(25579.5, 0)
-
-[node name="@Node2D@23749" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(25795.6, 0)
-
-[node name="@Node2D@23750" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(26171.6, 0)
-
-[node name="@Node2D@23751" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(26409.6, 0)
-
-[node name="@Node2D@23752" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(26764.1, 0)
-
-[node name="@Node2D@23753" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(27101.6, 0)
-
-[node name="@Node2D@23754" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(27390.9, 0)
-
-[node name="@Node2D@23755" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(27630.3, 0)
-
-[node name="@Node2D@23756" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(27915.9, 0)
-
-[node name="@Node2D@23757" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(28308.4, 0)
-
-[node name="@Node2D@23758" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(28691.9, 0)
-
-[node name="@Node2D@23759" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(28896.7, 0)
-
-[node name="@Node2D@23760" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(29162.4, 0)
-
-[node name="@Node2D@23761" type="Node2D" parent="@Node2D@23660" groups=["line_point"]]
-position = Vector2(29415.6, 0)
-
-[node name="CurveAnimation" type="AnimationPlayer" parent="@Node2D@23660"]
+[node name="CurveAnimation" type="AnimationPlayer" parent="@Node2D@59108"]
 unique_name_in_owner = true
 libraries = {
 &"": SubResource("AnimationLibrary_kxmgb")
